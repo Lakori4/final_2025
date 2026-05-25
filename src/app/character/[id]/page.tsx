@@ -48,7 +48,7 @@ const CharID = () => {
                         <li>Especie: {char?.species}</li>
                         <li>ID: {char?.id}</li>
                         <li>Origen: {char?.origin.name}</li>
-                        <li>Loacation: {char?.location.name}</li>
+                        <li>Location: {char?.location.name}</li>
                     </ul>
                 </>
             }
