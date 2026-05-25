@@ -1,0 +1,6 @@
+.CharCard {
+    display: flex;
+    flex-direction: row;
+    max-width: 10%;
+
+}
