@@ -6,7 +6,7 @@ import Pager from "@/components/Pager"
 import { getInfo } from "@/lib/api"
 import { Character, Paging } from "@/lib/types"
 import { useEffect, useState } from "react"
-import "./page.module.css"
+import "./page.css"
 
 
 const Chars = () => {

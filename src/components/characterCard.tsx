@@ -11,8 +11,8 @@ const CharacterCard = ({ Character }: Props) => {
 
 
     return (
-        <Link href={`/character/${Character.id}`}>
-            <div className="CharCard">
+        <Link href={`/character/${Character.id}`} className="CharCard">
+            <div >
                 <img src={Character.image} alt={Character.name} />
                 <div>
                     <h2 className="Name">{Character.name}</h2>
