@@ -1,3 +1,4 @@
+import "./Filters.css"
 
 type Props = {
     name: string,
@@ -42,7 +43,7 @@ const Filters = ({ name, gender, status, setGender, setStatus, setName, setLoadi
                     }
                     setLoading(true)
                 }
-            }>Género: {gender ? gender : <p>Sin género</p>}</button>
+            }>Género: {gender ? gender : <p>Todos</p>}</button>
 
 
             <button onClick={
@@ -58,7 +59,7 @@ const Filters = ({ name, gender, status, setGender, setStatus, setName, setLoadi
                     }
                     setLoading(true)
                 }
-            }>Estado: {status ? status : <p>Sin estado</p>}</button>
+            }>Estado: {status ? status : <p>Todos</p>}</button>
 
         </div>
     )

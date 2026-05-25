@@ -23,6 +23,7 @@ const CharID = () => {
                 const data = await getCharById(numId)
                 setChar(data)
                 setError("")
+                setLoading(true)
             } catch {
                 setError("Error")
             } finally {
@@ -31,11 +32,11 @@ const CharID = () => {
         }
 
         fetchCharacter()
-    })
+    }, [])
 
     return (
 
-        <div>
+        <div className="characterDetail">
             {error ? <h1>Error</h1> :
                 (!char && loading) ? <h1>Loading...</h1> : <>
 

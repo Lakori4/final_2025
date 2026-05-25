@@ -1,0 +1,15 @@
+.filters {
+
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        height: auto;
+    }
+
+    p {
+        margin: 0;
+    }
+}

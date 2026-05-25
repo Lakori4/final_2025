@@ -6,14 +6,11 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    max-width: 20%;
+    flex-wrap: wrap;
 
     img {
         border-radius: 50%;
         width: 175px;
-    }
-
-    div {
-        font-weight: bold;
-
     }
 }
