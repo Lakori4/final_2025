@@ -13,9 +13,14 @@ export const getInfo = async (page?: number, status?: string, gender?: string, n
         const resp = await api.get(`character/?page=${page}&status=${status}&name=${name}&gender=${gender}`)
         const info: ApiResp = resp.data
 
+        if (info.error) {
+            return info
+        }
         return info
 
     } catch (error) {
+
+        console.log(((await api.get(`character/?page=${page}&status=${status}&name=${name}&gender=${gender}`)).data))
         console.error("Error fetching ApiResponse")
         throw error
     }

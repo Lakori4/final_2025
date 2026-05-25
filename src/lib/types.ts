@@ -20,4 +20,5 @@ export type Paging = {
 export type ApiResp = {
     info: Paging
     results: Character[]
+    error?: string
 }
