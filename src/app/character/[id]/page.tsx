@@ -36,24 +36,21 @@ const CharID = () => {
     return (
 
         <div>
-
-
-
             {error ? <h1>Error</h1> :
                 (!char && loading) ? <h1>Loading...</h1> : <>
 
                     <h1>Nombre: {char?.name}</h1>
 
-                    <div className="details">
-                        <h3>Género: {char?.gender}</h3>
-                        <h3>Estado: {char?.status}</h3>
-                        <h3>Especie: {char?.species}</h3>
-                        <h3>ID: {char?.id}</h3>
-                        <h3>Origen: {char?.origin.name}</h3>
-                        <h3>Loacation: {char?.location.name}</h3>
-                    </div> </>
+                    <ul className="details">
+                        <li>Género: {char?.gender}</li>
+                        <li>Estado: {char?.status}</li>
+                        <li>Especie: {char?.species}</li>
+                        <li>ID: {char?.id}</li>
+                        <li>Origen: {char?.origin.name}</li>
+                        <li>Loacation: {char?.location.name}</li>
+                    </ul>
+                </>
             }
-
         </div>
     )
 }

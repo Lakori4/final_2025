@@ -17,8 +17,8 @@ const CharacterCard = ({ Character }: Props) => {
                 <div>
                     <h2 className="Name">{Character.name}</h2>
                     <div className="details">
-                        <p>{Character.gender}</p>
-                        <p>{Character.status}</p>
+                        <p>Género: {Character.gender}</p>
+                        <p>Estado: {Character.status}</p>
                     </div>
                 </div>
             </div>

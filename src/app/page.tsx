@@ -46,7 +46,7 @@ const Chars = () => {
     <div>
 
       <Filters name={name} status={status} gender={gender} setLoading={setLoading} setGender={setGender} setName={setName} setStatus={setStatus} />
-      {error ? <h1>Error</h1> :
+      {error ? <h1>No hay personajes con los filtros seleccionados</h1> :
 
         (!chars && loading) ? <h1>Loading...</h1> : <>
 

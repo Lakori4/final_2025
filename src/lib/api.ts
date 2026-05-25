@@ -34,16 +34,3 @@ export const getCharById = async (id: string) => {
         throw error
     }
 }
-
-const getPages = async (page?: number, status?: string, gender?: string, name?: string) => {
-
-    try {
-        const resp = await api.get(`character/?page=${page}&status=${status}&name=${name}&gender=${gender}&`)
-        const pages: Paging = { pages: resp.data.info.pages, next: resp.data.info.next, prev: resp.data.info.prev }
-
-        return pages
-    } catch (error) {
-        console.error("Error fetching pages")
-        throw error
-    }
-} 
